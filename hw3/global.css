@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+*{margin:0px;} 
+h1 {font-family: "Lato" ;padding:8px; height:2px; width:100%; background-color:black; color:white; font-size:18px; font-family:calibri,sans-serif; position:fixed; z-index:1;}
+h2 {font-family: "Lato" ;padding-top:12px; padding-bottom:8px; padding-left:50px; top:18px; height:28px; width:100%; background-color:#1874CD; color:white; font-family:"Times New Roman",serif; font-size:24px; position:fixed; z-index:1;}
+
+.menuDiv {font-family: "Lato" ;padding-top:10px; padding-bottom:10px; padding-left:100px; top:66px; height:24px; width:100%; font-size:18px; background-color:#87CEFF; color:white; font-family:Times New Roman,sans-serif; position:fixed; z-index:1;}
+.menuA {font-family: "Lato" ;font-size:18px; color:white; position:relative; left:20px;}
+div#txtdisplay {font-family: "Lato" ;left:220px; margin-top:108px; position:absolute; width:1140px; height:1000px;}
+
+
+
+
+body{
+	
+	font-family: "Lato" ;
+}

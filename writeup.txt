@@ -1,0 +1,123 @@
+Writeup File
+Homework 3 Link:http://cs-server.usc.edu:2345/hw3/login.php
+Homework 2 Link:http://cs-server.usc.edu:2345/hw2/login1.php
+phpmyadmin link:http://cs-server.usc.edu:2345/phpMyAdmin/index.php
+This website is the client side of a website.I have used 6 tables customer,order,orderdetail,product,productcategory,specialsales
+1.Customer
+customerid	int(11)-primary key
+username	varchar(255)-username of user	
+password	varchar(255)-password of user	
+firstname	varchar(255)-first name	
+lastname	varchar(255)-last name	
+age	int(11)-age		
+email	varchar(255)-e-mail	
+phone	int(11)-phone number
+2.Order
+orderid	int(11)	-order id		
+customerid	int(11)-customer id			
+totalcost	int(11)-total cost			
+billingaddress	varchar(255)-billing address
+shippingaddress	varchar(255)-shipping address
+date	date-date of order
+3.Order Detail
+orderid	int(11)		-order id	
+productid	int(11)-product id		
+productprice	int(11)-product price		
+productquantity	int(11)-product quantity	
+4.Product
+productid	int(11)	-primary key	
+productcategoryid	int(11)	-foreign key in product category table		
+productname	varchar(255)	-product name
+productimage	varchar(255)-product image	
+productprice int(11)	-product price
+5.Product Category
+productcategoryid	int(11)	-primary key in product category table	
+productcategoryname	varchar(255)	-product category name
+6.Special Sales
+specialsalesid	int(11)	-primary key		
+productid	int(11)	-foreign key in product table		
+startdate	date	- start date	
+enddate	date	-end date		
+discount	int(11)	-discount
+Usernames and passwords for hw3
+User 1.Username:abhi Password:abhi
+Usernames and passwords for hw2 for manager reports
+Manager.Username:abhishanga	Password:ali17
+Admin Username:namrata Password:456
+Sales Manager Username:aardraa Password:781
+Files for uploading pictures are in the Pictures Folder.
+
+Files(HW3)
+accountpre.html-Contains the upper part of the login file including the heading
+accountpost.html-Contains the latter part of the page.
+account.php-It is the welcome page for the user containing 3 options to view current cart,to view past orders and to update profile.Special Sales are
+displayed on this page
+billing.php-It is the page which displays order summary of the products bought and also stored the users credit card information,billing and shipping address.
+connect.php-It is used for creating the registration for new users.It has 2 functions which checks whether the user is new or old.
+fetch.php-This file displays the order details when the user clicks view order it shows the corresponding detail of the past order he has chosen.
+getCategoryProducts.php-It show category wise the products stored in the database.We can add items from this page to the shopping cart.
+getSeachProducts.php-Implements AJAX to display the products that have been searched as keywords in the input field above in the page.
+global.css-CSS File used for styling the website.
+home.php-Shows the products available in special sales.
+login.php-Determines whether the login is valid or invalid and displays either an error message or goes to a new page.
+logout.php-Destroys the sessions and logs the user out.
+order.php-Displays thank you message after customer has ordered items.
+products.php-This page contains all the products available.
+profile.php-This shows a form for new user to register and sign up.
+shoppingcart.php-This page displays the shopping cart wherein a user adds,deletes and changes his order
+update.php-Update file for updating user details.
+updateprofile.php-Shows a form to displays user details which a user can change.
+vieworder.php-This shows the past orders of a user when a user clicks view past orders.
+
+
+Files(HW2)
+manager5.php-Contains customer sales report options where in we can type in a particular product/productcategory/order date and get corresponding orders.
+Alse contains a set of options to see total product category product sales,product sales and frequently purchased products.
+display6.php-Displays the result of the search result.
+pcsales.php-Shows sales of a particular product category
+psales.php-Shows sales of a particular product
+totalsales.php-Total Sales of All product categories
+freqprods1.php-Shows frequently purchased products in desceding order.
+FILES(HW2)
+Files
+prelogin.html-Contains the upper part of the login file including the heading
+postlogin.html-Contains the latter part of the page.AJAX is implemented in the terms and conditions.
+login1.php-Validates the usernames and passwords from the users database and accordingly either redirects to a particular page after a sucessful login or gives an error message.
+manager.php-Session time starts here.Contains buttons for selection of reports for product,productcategory,specialsales and employee.
+manager1.php-Contains search criteria for employee details.
+manager2.php-Contains search criteria for special sale details.
+manager3.php-Contains search criteria for product details.
+manager4.php-Contains search criteria for product category details.
+display1.php-SQL for product search is implemented.
+display2.php-SQL for employee search is implemented.
+display3.php-SQL for special sales search is implemented.
+display4.php-SQL for product category search is implemented.
+employee.php-Session time starts here.Contains buttons for adding,changing and modifying product,productcategory and specialsales details.
+addchangeproduct.php-Addition of product with price and name or modifying the existing details of product.
+addchangeproductcat.php-Addition of product category name or modifying the existing details of product category.
+addchangess.php-Addition of special sales with product discount,start date,end date or modifying the existing details of special sales product.
+addproduct.php-SQL implementation for adding product.
+addproductcat.php-SQL implementation for adding product category.
+addss.php-SQL implementation for adding special sales.
+changedeleteproduct.php-Radio list if change for product with price and name  or checkbox for delete.
+changedeleteproductcat.php-Radio list if change for product category with name  or checkbox for delete.
+changedeletess.php-Radio list if change for product with start date,end date and discount  or checkbox for delete.
+changeproduct.php-SQL implementation for changing product details.
+changeproductcat.php-SQL implementation for changing product category details.
+changess.php-SQL implementation for changing special sales details.
+deleteproduct.php-SQL implementation for deleting product details.
+deleteproductcat.php-SQL implementation for deleting product category details.
+deletess.php-SQL implementation for deleting special sales details.
+admin.php-Session time starts here.Contains buttons for adding,changing and modifying user and user login plus product,productcategory and specialsales details.Also can search for reports.
+addchangeuser.php-Addition of product with price and name or modifying the existing details of user login.
+addchangeuser1.php-Addition of product category name or modifying the existing details of user details .
+adduser.php-SQL implementation for adding user.
+adduser1.php-SQL implementation for adding user details.
+changedeleteuser.php-Radio list if change for user with username,password and usertype  or checkbox for delete.
+changedeleteuser1.php-Radio list if change for user category with first name,last name,age and employeepay  or checkbox for delete.
+changeuser.php-SQL implementation for changing user login details with username,password and usertype.
+changeuser1.php-SQL implementation for changing user details with first name,last name,age and employeepay.
+deleteuser.php-SQL implementation for deleting user login details with username,password and usertype.
+deleteuser1.php-SQL implementation for deleting user details with first name,last name,age and employeepay.
+logout.php-Timeout after 5minutes.Redirected to the login page.
+
